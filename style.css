@@ -1,0 +1,77 @@
+html {
+  background-image: url("images/chalkboard.jpg");
+  background-repeat: repeat;
+}
+/*Consider a different background - the pattern library*/
+header {
+	height: 120px;
+  text-align: center;
+}
+/* general body formatting for consistency across site - font/color */
+body { 
+	font-family: 'Courier New';
+  color: whitesmoke
+	}
+/*ensure images across entire width */
+.full-width {
+	width: 100%;	
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  font-size: 14pt;
+  margin: 20px;
+}
+
+p {
+  padding: 15px;
+}
+
+footer h3 {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.group img {
+  width: 100%;
+  padding: 20px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* link styling */
+a:link    { color: whitesmoke; }
+a:visited { color: whitesmoke;   }
+a:hover   { color: blanchedalmond }
+a:active  { color: aquamarine;  }
